@@ -14,22 +14,37 @@
         }
         p{
             font-size: 1.2em;
+            text-align: center;
         }
     </style>
     <title>JS</title>
 </head>
 <body>
     <h1>Iniciando os estudos de DOM</h1>
-    <p>Aqui vai o resultado</p>
+    <p id="jasg">Aqui vai o resultado</p>
     <p><strong><u>Clique em mim</u></strong></p>
+    <p class="sh" name="nome">Parágrafo de exemplo</p>
     <script>
          window.document.writeln('<p>Hello world</p>' + window.document.charset)
+         document.write('<br>')
          var g = window.document.getElementsByTagName('p')[1]
          document.write(g.innerText)
          g.style.color = 'red'
          var gas = document.body
          gas.style.background = 'light-purple'
-         document.getElementById
+         document.write('<br>')
+         var js = document.getElementById('jasg')
+         document.writeln(js.innerHTML)
+         /*var emc2 = document.getElementsByName('nome')[0]
+         document.write(emc2.innerText) (name)*/
+         document.write('<br>')
+         var bdm = window.document.getElementsByClassName('sh')[0]
+         document.write(bdm.innerText)
+         var bw = document.getElementById('jasg')
+         bw.style.textAlign = 'center'
+
+
+         
     </script>
 </body>
 </html>
