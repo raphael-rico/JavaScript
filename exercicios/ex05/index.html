@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        *{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        html{
+            background-color: rgb(65, 64, 64);
+        }
+        h1{
+            text-align: center;
+            color: aliceblue;
+            text-decoration: double;
+        }
+        h2{
+            text-align: center;
+            color: antiquewhite;
+            text-decoration: overline;
+        }
+        div{
+            padding-top: 7vh;
+            padding-bottom: 7vh;
+            text-align: center;
+            margin: auto;
+            max-width: 40vw;
+            background-color: rgb(158, 78, 78);
+            border-radius: 6px 20px;
+        }
+        p{
+            color: blanchedalmond;
+        }
+    </style>
+</head>
+<body>
+    <h1>Continuando com DOM</h1>
+    <H2>(Document Object Model)</H2>
+    <div onmousedown="press()">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur <strong>sunt</strong> esse est maiores tempora commodi doloremque. Necessitatibus deserunt officiis consectetur molestiae suscipit, dicta aperiam voluptate pariatur. Ut impedit iusto laboriosam!</p>
+        <p>Parágrafo genérico para causar repetição de tags</p>
+    </div>
+    <script>
+        function press(){
+            var p = window.document.getElementsByTagName('div')[0]
+            p.innerText = 'Foi clicado'
+        }
+    </script>
+</body>
+</html>
