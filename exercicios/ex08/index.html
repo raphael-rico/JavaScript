@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+    <style>
+        html{
+            background-color: rgb(201, 184, 184);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        div{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Brasileiro?</h1>
+        <label for="nac">País de nascença:</label>
+        <input id="nac" type="text">
+        <input onclick="clic()" type="button" value="Confirmar">
+    </div>
+    <script>
+        function clic(){
+            var r = window.document.querySelector('input#nac')
+            if (r.value == 'Brasil' || r.value == 'brasil'){
+                document.write(`Se você nasceu no ${r.value} você é brasileiro!`)
+            }
+            else{
+                document.write(`Se você nasceu no(na)(nas)(nos)${r.value} você é estrangeiro!`)
+            }
+        }
+    </script>
+</body>
+</html>
