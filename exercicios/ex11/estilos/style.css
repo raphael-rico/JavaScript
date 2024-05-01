@@ -23,6 +23,18 @@ header{
     margin-top: 5vh;
     margin-bottom: 5vh;
 }
+legend{
+    text-align: center;
+}
+#form{
+    text-align: center;
+}
+fieldset{
+    padding: 10px;
+}
+#iradio{
+    margin-right: 18px;
+}
 h1{
     text-align: center;
     color: white;
@@ -40,4 +52,9 @@ footer > p > a{
 }
 a:hover{
     color: black;
+}
+p{
+    text-align: center;
+    font-weight: bolder;
+    color: darkblue;
 }

@@ -11,14 +11,26 @@
         <h1>Verificador de idade</h1>
     </header>
     <main>
-        <div>
-            <label for="iano">Ano de nascimento: </label>
-            <input style="width: 100px;" required placeholder=" Ex: (1998)" min="1908" max="2024" size="78" type="number" name="ano" id="iano">
+        <div id="form">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                    <label for="iano">Ano de nascimento: </label>
+                    <input style="width: 100px;" required placeholder=" Ex: (1998)" min="1908" max="2024" size="78" type="number" name="ano" id="iano"> <br>
+                    <label for="iradio">Masculino</label>
+                    <input type="radio" name="radio" id="iradio" checked>
+                    <label for="iradio2">Feminino</label>
+                    <input type="radio" name="radio" id="iradio2" onchange="bcao">
+                    <br>
+                    <input type="button" value="Confirmar" onclick="acao()">
+            </fieldset>
         </div>
-        <div>
+        <div id="wor">
+    
+        </div>
+        <div id="ide">
 
         </div>
-        <div>
+        <div id="img">
 
         </div>
     </main>
