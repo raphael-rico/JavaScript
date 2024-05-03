@@ -49,5 +49,9 @@ function acao(){
         var nsm = document.getElementById('img')
         nsm.innerHTML=`<img id="nam" src="estilos/womanv.webp" alt="Mulher velha">`
     }
+    if (res > 129 || res < 0){
+        var nu = document.getElementById('img')
+        nu.innerHTML=`<img id="null" src="#" alt="?">`
+    }
 }
 

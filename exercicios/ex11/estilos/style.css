@@ -65,3 +65,6 @@ p{
     width: 16vw;
     height: 30vh;
 }
+#null{
+    display: none;
+}
