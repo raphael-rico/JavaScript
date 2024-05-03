@@ -58,3 +58,10 @@ p{
     font-weight: bolder;
     color: darkblue;
 }
+#bbm,#hmi,#hv,#cm,#mum,#nam{
+    border-radius: 50%;
+    display: block;
+    margin: auto;
+    width: 16vw;
+    height: 30vh;
+}
